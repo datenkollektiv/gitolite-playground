@@ -1,0 +1,11 @@
+version: '3.7'
+
+services:
+    git-sandbox:
+        image: datenkollektiv/gitolite
+        ports:
+            - 127.0.0.1:2222:22
+        volumes: 
+            - ./docker/gitolite/keys:/etc/ssh/keys
+            - ./docker/gitolite/git:/var/lib/git
+            - /var/run/docker.sock:/var/run/docker.sock
