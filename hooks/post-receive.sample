@@ -7,3 +7,6 @@ then
     echo "Found 'gitolite-admin' repo. Bailing out."
     exit 0
 fi
+
+echo "Put your docker commands here..."
+
