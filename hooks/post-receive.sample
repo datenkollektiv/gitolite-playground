@@ -1,0 +1,9 @@
+#!/bin/sh
+
+echo "Running 'post-receive' hook..."
+
+if [ "${GL_REPO}" == "gitolite-admin" ]
+then
+    echo "Found 'gitolite-admin' repo. Bailing out."
+    exit 0
+fi
