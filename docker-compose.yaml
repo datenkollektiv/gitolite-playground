@@ -9,3 +9,7 @@ services:
             - ./docker/gitolite/keys:/etc/ssh/keys
             - ./docker/gitolite/git:/var/lib/git
             - /var/run/docker.sock:/var/run/docker.sock
+            - gitolite-workspace:/workspace
+
+volumes:
+  gitolite-workspace:
