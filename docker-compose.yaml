@@ -10,6 +10,8 @@ services:
             - ./docker/gitolite/git:/var/lib/git
             - /var/run/docker.sock:/var/run/docker.sock
             - gitolite-workspace:/workspace
+            - terraform-state:/terraform-state
 
 volumes:
   gitolite-workspace:
+  terraform-state:
