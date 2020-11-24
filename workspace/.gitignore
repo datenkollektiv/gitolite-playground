@@ -1,5 +1,6 @@
 *
 
 !clone-gitolite-admin.sh
+!clone-testing.sh
 
 !.gitignore
