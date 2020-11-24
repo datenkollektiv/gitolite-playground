@@ -10,3 +10,5 @@ docker run --rm \
     jgiannuzzi/gitolite true
 
 cp credentials/gitolite-admin_id_rsa.pub docker/gitolite/keys
+
+ssh-keygen -t rsa -b 4096 -f credentials/gitolite-user_id_rsa -N "" -C "gitolite-user@sandbox"
